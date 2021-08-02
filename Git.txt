@@ -1,0 +1,105 @@
+GIT--> Version Control System
+
+Git is a version control system to record changes made to files over time.
+Git also has the ability to revert back to a previous file version or project version.
+Git can also compare changes made to files from one version to another.
+Version control can take place of any type of file and not just version control files.
+
+-----------------------------------------------------------------------------------------
+
+3 Stages of GIT:
+
+1. Committed: Data in the file is safely stored in the local database with that project.
+
+2. Modified: When changes are made. File is in the committed version that is stored in the local database.
+This is basically work in progress and more changes can be made to the file.
+
+3. Staged: After changes made, then take those changes from the local database file and commit it
+to take the commit snapshot.
+
+-----------------------------------------------------------------------------------------
+
+3 Main parts of GIT:
+
+1. Working directory:
+i.e the .git directory/repository--->
+Files are fetched here to be manipulated.
+
+2. Git directory
+This is where git stores the meta data and object database for his project.
+
+3.Staging Area:
+This is an area that sits between his working directory and the .git directory.
+It is used to build up to a change or a set of changed that we want to commit by taking a snapshot of the project.
+
+-----------------------------------------------------------------------------------------
+
+Command Line:
+
+
+1. pwd: print working directory---> returns your current folder path location.
+
+2. cd: change directory---> to go one directory upwards--> cd..
+To go the home folder or starting point---> cd~
+
+3. ls/ dir---> Lists files or directory.
+
+4. touch/copy con---> create a new empty file.
+
+5. mkdir---> Create a new empty folder.
+
+-----------------------------------------------------------------------------------------
+
+
+Git Commands:
+
+1. git --version---> To check which version of git is installed.
+
+2. git config --global user.name "Omkar Ghotekar" ---> To configure the user that is making changes to the repo.
+
+3. git config --global user.email "emailid"--> To configure the user that is making changes to the repo.
+
+If we want different user-name and email id for different projects, then we can use same commands but without the global keyword.
+
+4. git config --list---> to configure the list of settings present at that point of time.
+
+
+-----------------------------------------------------------------------------------------
+
+GIT Help:
+
+1. man git--> Lists down all the commands of every level i.e high level(porcelian commands)
+
+2. git help config
+
+-----------------------------------------------------------------------------------------
+
+
+Initialising a new GIT Repository:
+
+git init---> Initialize the git respository 
+cd .git--> dir--> we can see varioius files created inside git
+
+
+-----------------------------------------------------------------------------------------
+
+Commands
+
+1. To add a readme file through command-line:
+
+echo "# whatever_we_want_to_write_in_readme" >> README.md
+
+2. git add . ---> to add files to staging area
+
+3. git commit -m "first_commit" ---> to commit to staging area.
+
+4. Now to add to remote repository on github, we need to specify its origin using the command:
+git add origin url
+
+5. git push -u origin master ---> to push changes to git repo.
+
+6. clear---> clears out the window of git.
+
+7. git status---> gives the status(differnece) between the local and the cloud repos
+
+8.
