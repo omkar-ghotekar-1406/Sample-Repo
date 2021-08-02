@@ -102,4 +102,4 @@ git add origin url
 
 7. git status---> gives the status(differnece) between the local and the cloud repos
 
-8. Now adding files to github
+8. git using github changes
