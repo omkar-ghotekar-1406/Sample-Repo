@@ -1,0 +1,82 @@
+----------Single Responsibility Principles----------
+
+Responsibilities of code can change at different times for different reasons
+
+Software should have low/loose coupling and high cohesion i.e bonding
+
+
+-----------Open/Closed Principle-----------------
+
+Software entities i.e classes, modules and functions should be open for extention but closed for modification(changes to the binary code are not required)
+i.e it should be possible to change the behaviour of the method code without editing its source code
+Becoz the less likely we need to change the code in the system, the less it will give bugs
+
+Basically using abstraction to make the design of the code more extensible
+
+Typical Approches to Open/Closed Principle
+1. Paramaters
+2. Inheritance
+3. Composition/Injection (Instead of placing logic directly into class, the logic is written somewhere else and references are given to the class)
+4. Prefer using New Classes for extension
+
+Nuget package: guard clause
+
+
+
+-------------Liskov Substitution Principle-----------
+
+It states that IS-A relationship is insufficient and should be replaced by IS-SUBUSTITUATABLE-FOR
+Square is a rectangle
+
+LSP is a subtype of Polymorphism
+
+LSP break in the following ways :
+1. Type Checking i.e is/as keyword
+2. Null checking
+3. NotImplemented Exceptions
+
+
+
+------------------Interface Segregation Principle------------
+
+Clients(is code that is interacting with an instance of an interface i.e calling code)
+should not be forced to depend upon methods they do not use
+i.e we should prefer small cohesive interfaces instead of large fat ones
+
+Extract smaller interfaces from larger interfaces and use only them.
+Smaller cohesive interfaces are preferable to large interfaces whose methods are lossly realted to each other.
+
+Use the adapter design pattern so your code can work with the adapter
+
+Detecting ISP:
+Look for large interfaces
+Use adapter design pattern
+
+
+
+----------------Dependency Inversion Principle-----------
+
+High level modules should not depend on low-level modules. Both should depend on abstarctions.
+Abstaction should not depend on details but details should depend on abstractions.
+
+Abstractions describe what and now how
+
+Types of dependencies in C#
+1. Compile time dependency(DIP)
+2. Run time dependency
+
+
+High level modules are Domain model or buiseness rules
+Low level moduels are UI or database or persistence layer or external hardware
+
+
+
+Low level dependencies include:
+1. Database
+2. File System I/O
+3. Emails send and receive
+4. Web API's
+5. Configurations  
+6. System clock access
+
+

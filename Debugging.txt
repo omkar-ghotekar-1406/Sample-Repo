@@ -1,0 +1,66 @@
+1. Exceptions on bugs
+
+2. Breakpoints: 
+		
+		1. Step into: to drill down into any nested method calls if applicable
+		2. Step over: to step over nested method calls  and continue through the current method
+		3. Continue: to continue runnign the application
+		
+
+3. Check if all methods are running
+				1. Using all referneces
+				2. Using method implementation
+
+
+Breakpoints management:
+
+Debug-> Windows-> Breakpoints
+We can search for a specific break points
+We can also label a specific breakpoints
+Hit Counter: How many  times a specific break point is hit
+
+
+
+Conditional Breakpoints(When repeatedly same things take place):
+Applied when specific conditions are met
+Specify the conditions in the given textbox to be either true or false.
+
+
+Watch:
+It allows us to inspect and manage the varibales and its data
+It also allows us to temporarily edit values 
+
+
+Quick watch:
+Allows us to inspect a single variable or expression at a time or add addtional watches to the watch window.
+
+Edit and Continue:
+We can edit the application without stopping it 
+We can do it by Debug-> Options-> Debugging-> General-> Enable edit and continue.
+
+Immediate Window:
+Debug->Windows-> Immediate Code
+
+
+Try-Catch Block:
+Use Debug.WriteLine(e) to log the types of exceptions in the code.
+or use Debugger.Break() to set up break points in the app.
+
+
+Trace Points:
+Whenever we require to see the trend or general details of varibale in iterative code withoutout pausing each item 
+then trace points are used.
+Breakpoint->Right Click->Actions->Specify actions
+
+
+Call Stack:
+Debug->Window->Call Stack
+Call stack shows the functions and methods that are called on the stack.
+
+
+Debugging:
+Its done using symbol files. Symbol files provide mappings between the source code that we work with and the compiled 
+code in the DLL's.
+These symbol files are also called as the program debug databases files with a .pdb extension because they store the data
+that manages the relationship.
+

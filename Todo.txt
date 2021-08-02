@@ -1,0 +1,10 @@
+Margin 
+padding
+ui elements
+Feilds set to null- two way binding
+debugging
+binding errors
+
+nullable integer
+nullable value type
+push pull
